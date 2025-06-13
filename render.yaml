@@ -6,3 +6,14 @@ services:
     startCommand: ./start.sh
     env: python
     plan: free
+services:
+  - type: web
+    name: smart-cane-api
+    env: python
+    plan: free
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port 10000"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
