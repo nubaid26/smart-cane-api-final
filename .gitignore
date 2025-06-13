@@ -1,0 +1,49 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+# Ignore model weights
+*.pt
+*.h5
+*.ckpt
+*.weights
+
+# Ignore dataset files
+*.jpg
+*.png
+*.jpeg
+*.csv
+*.mp4
+*.avi
+
+# Ignore cache/temp files
+__pycache__/
+*.log
+*.tmp
+*.mp3
+speech.mp3
+
+# Ignore environment
+venv/
+env/
+*.env
+
+# Ignore pyc files
+*.pyc
+
+# Ignore anything else heavy
+*.zip
+*.tar
+*.tar.gz
+*.gz
